@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ORNELLA QUINTANILLA</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#education">Formación Académica</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <section id="about">
+            <h2>Sobre mí</h2>
+            <div class="about-container">
+                <img src="ruta/a/tu/foto.jpg" alt="Foto de Tu Nombre" class="profile-photo">
+                <div>
+                    <p>Actualmente soy estudiante en la Universidad Tecnológica Nacional (tecnicatura en programación). Busco formar parte de un ámbito de trabajo para poder obtener un desarrollo profesional y aportar mis aptitudes al 100%. Puedo adaptarme rápidamente y realizar todas las tareas que se soliciten.</p>
+                    <p><a href="ruta/a/tu-cv.pdf" download>Descargar Curriculum en PDF</a></p>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Habilidades</h2>
+            <div class="skill-container">
+                <div class="skill" onmouseover="showPercentage(this)" onmouseout="hidePercentage(this)">
+                    <span>Pensamiento lógico y resolución de problemas</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 100%;"><span class="percentage">100%</span></div>
+                    </div>
+                </div>
+                <div class="skill" onmouseover="showPercentage(this)" onmouseout="hidePercentage(this)">
+                    <span>Estrategia de redes sociales y plataforma de videojuegos</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"><span class="percentage">85%</span></div>
+                    </div>
+                </div>
+                <div class="skill" onmouseover="showPercentage(this)" onmouseout="hidePercentage(this)">
+                    <span>Criterios de investigación en motores de búsquedas e internet profunda</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"><span class="percentage">85%</span></div>
+                    </div>
+                </div>
+                <div class="skill" onmouseover="showPercentage(this)" onmouseout="hidePercentage(this)">
+                    <span>Conocimientos en regulaciones relacionadas a la información digital</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 100%;"><span class="percentage">100%</span></div>
+                    </div>
+                </div>
+                <div class="skill" onmouseover="showPercentage(this)" onmouseout="hidePercentage(this)">
+                    <span>Conocimiento de principales controles de seguridad y medición de los mismos a través de métricas efectivas</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 75%;"><span class="percentage">75%</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="education">
+            <h2>Formación Académica</h2>
+            <ul>
+                <li>Secundario completo (Comunidad Parroquial y Educativa San Jorge).</li>
+                <li>Curso de seguridad en sistemas y redes.</li>
+                <li>Curso de JavaScript.</li>
+                <li>Curso de Python.</li>
+                <li>Curso de Data Analytics.</li>
+                <li>Curso de investigación digital.</li>
+                <li>Curso de gestión de vulnerabilidades.</li>
+                <li>Curso de seguridad física, técnica y administrativa.</li>
+                <li>Curso de informática forense.</li>
+                <li>Manejo de herramientas como PowerPoint, Excel, Word, OpenOffice, Visual Studio Code y Power Bi.</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <P>Ubicacion: Rosario, Santa Fe, Argentina</P>
+            <p>Correo electrónico: orneeequintanilla@gmail.com</p>
+            <p>Teléfono: +54 9 3416143502</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/ornellaquintanilla/" target="_blank">Mi perfil de Linkedin..</a></p>
+        </section>
+    </div>
+    <script>
+        function showPercentage(element) {
+            element.querySelector('.percentage').style.display = 'block';
+        }
+
+        function hidePercentage(element) {
+            element.querySelector('.percentage').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
